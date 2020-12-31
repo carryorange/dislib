@@ -5,6 +5,11 @@ namespace dslib {
 SimpleUFDS::SimpleUFDS(size_t max_size) {
     m_nodes.resize(max_size, -1);
     m_ranks.resize(max_size, 0);
+
+    // Initialize all nodes to be in distinct sets
+    for (int i = 0; i < m_nodes.size(); i++) {
+        m_nodes[i] = i;
+    }
 }
 
 size_t SimpleUFDS::makeUnion(size_t n1, size_t n2) {

@@ -1,1 +1,1 @@
-# DSLIB: A repo to keep all C++ data structures
+# DSLIB: A repo to keep all C++ data structures code
